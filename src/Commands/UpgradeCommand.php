@@ -26,7 +26,7 @@ class UpgradeCommand extends Command
         ProcessRunner::run([
             'composer',
             'require',
-            "merakilab/meraki:{$version}"
+            "merakilab/meraki-core:{$version}"
         ], getcwd());
 
         return Command::SUCCESS;

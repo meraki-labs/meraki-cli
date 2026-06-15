@@ -37,7 +37,7 @@ class NewCommand extends Command
         ProcessRunner::run([
             'composer',
             'require',
-            'merakilab/meraki'
+            'merakilab/meraki-core'
         ], "{$path}/{$name}");
 
         $output->writeln("<info>Done.</info>");

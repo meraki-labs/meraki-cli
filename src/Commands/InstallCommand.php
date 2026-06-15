@@ -22,7 +22,7 @@ class InstallCommand extends Command
         ProcessRunner::run([
             'composer',
             'require',
-            'merakilab/meraki'
+            'merakilab/meraki-core'
         ], getcwd());
 
         return Command::SUCCESS;
