@@ -28,17 +28,9 @@ class NewCommand extends Command
         ProcessRunner::run([
             'composer',
             'create-project',
-            'laravel/laravel',
+            'merakilab/meraki-template',
             $name
         ], $path);
-
-        $output->writeln("<comment>Installing Meraki...</comment>");
-
-        ProcessRunner::run([
-            'composer',
-            'require',
-            'merakilab/meraki-core'
-        ], "{$path}/{$name}");
 
         $output->writeln("<info>Done.</info>");
 
